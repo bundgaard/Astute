@@ -50,8 +50,10 @@ public class Proxy extends Thread {
         return str.getBytes("utf-8");
     }
     
+    private String HEADER = "HTTP/1.0 200 OK\r\n"
+             + "Content-Type: text/html\r\n";
     
-
+    
     @Override
     public void run() {
         try {
